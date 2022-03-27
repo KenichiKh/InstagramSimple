@@ -28,7 +28,7 @@ The following **additional** features are implemented:
 
 Here's a walkthrough of implemented user stories:
 
-<img src='https://github.com/KenichiKh/InstagramSimple/blob/f74463c79cd022a1274afbbe8412327e3b2d9d40/InstagramSimple%20Walkthrough%201.gif' title='InstagramSimple Walkthrough 1' width='' alt='Video Walkthrough' />
+<img src='https://github.com/KenichiKh/InstagramSimple/blob/72fef5ddf589a2ea90f6e71936535308716e97da/InstagramSimple%20Walkthrough.gif' title='InstagramSimple Walkthrough 1' width='' alt='Video Walkthrough' />
 <img src='https://github.com/KenichiKh/InstagramSimple/blob/f74463c79cd022a1274afbbe8412327e3b2d9d40/InstagramSimple%20Walkthrough%201.2.gif' title='InstagramSimple Walkthrough 1.2' width='' alt='Video Walkthrough' />
 
 GIF created with [LiceCap](http://www.cockos.com/licecap/).
