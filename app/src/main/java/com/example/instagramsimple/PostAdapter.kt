@@ -54,7 +54,7 @@ class PostAdapter(val context: Context, val posts: List<Post>): RecyclerView.Ada
             //Populate Image
             Glide.with(itemView.context).load(post.getImage()?.url).into(ivFileView)
 
-            tvTimeStamp.text = post.getTime(createdAt : Date).toString()
+            tvTimeStamp.text = post.getTime().toString()
 
         }
     }
