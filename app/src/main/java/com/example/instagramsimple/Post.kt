@@ -32,7 +32,7 @@ class Post : ParseObject() {
         put(KEY_USER, user)
     }
 
-    fun getTime(): {
+    fun getTime(): Date? {
         return getDate(KEY_TIME)
     }
     fun setTime(updatedAt: Date){
