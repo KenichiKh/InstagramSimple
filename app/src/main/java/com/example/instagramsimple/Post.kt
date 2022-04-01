@@ -4,6 +4,7 @@ import com.parse.ParseClassName
 import com.parse.ParseFile
 import com.parse.ParseObject
 import com.parse.ParseUser
+import java.util.*
 
 
 //Description : String
@@ -31,9 +32,17 @@ class Post : ParseObject() {
         put(KEY_USER, user)
     }
 
+    fun getTime(): {
+        return getDate(KEY_TIME)
+    }
+    fun setTime(updatedAt: Date){
+        put(KEY_TIME, updatedAt)
+    }
+
     companion object{
         const val KEY_DESCRIPTION = "description"
         const val KEY_IMAGE = "Image"
         const val KEY_USER = "user"
+        const val KEY_TIME = "createdAt"
     }
 }
