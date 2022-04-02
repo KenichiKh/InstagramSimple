@@ -10,6 +10,7 @@ import java.util.*
 //Description : String
 //Image : File
 //User : User
+//updatedAt : Date
 @ParseClassName("Post")
 class Post : ParseObject() {
 
@@ -35,8 +36,9 @@ class Post : ParseObject() {
     fun getTime(): Date? {
         return getDate(KEY_TIME)
     }
-    fun setTime(updatedAt: Date){
-        put(KEY_TIME, updatedAt)
+
+    fun setTime(date: Date){
+        put(KEY_TIME, createdAt)
     }
 
     companion object{

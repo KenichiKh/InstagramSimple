@@ -28,7 +28,7 @@ class ProfileFragment: HomeFragment() {
                 }else {
                     if (posts != null){
                         for (post in posts){
-                            Log.i(TAG, "Post: " + post.getDescription())
+                            Log.i(TAG, "Post: " + post.getDescription() + ", Date: " + post.getTime())
                         }
                         allPosts.addAll(posts)
                         adapter.notifyDataSetChanged()

@@ -43,7 +43,7 @@ class ComposeFragment : Fragment() {
 
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
-        // Set onClicklListeners and setup logic
+        // Set onClickListeners and setup logic
 
         ivPreview = view.findViewById(R.id.ivFileView)
 
@@ -55,7 +55,7 @@ class ComposeFragment : Fragment() {
             if (photoFile != null) {
                 submitPost(description, user, photoFile!!)
             } else {
-                //TODO: Print error log messege
+                //TODO: Print error log message
                 Log.i(MainActivity.TAG, "Error, No Image Found")
                 //TODO: show a toast to the user to let them know how to take a picture
             }
@@ -68,7 +68,7 @@ class ComposeFragment : Fragment() {
         }
     }
         fun submitPost(description: String, user: ParseUser, file: File){
-            //Create the post onject
+            //Create the post inject
             val post = Post()
             post.setDescription(description)
             post.setUser(user)
@@ -84,7 +84,7 @@ class ComposeFragment : Fragment() {
                     Log.i(MainActivity.TAG, "Successfully saved post")
                     //TODO: Resetting the EditText field to be empty
                     //TODO: Reset the ImageView to empty
-                    Toast.makeText(requireContext(), "Post Successfull", Toast.LENGTH_SHORT).show()
+                    Toast.makeText(requireContext(), "Post Successful", Toast.LENGTH_SHORT).show()
                 }
 
             }
